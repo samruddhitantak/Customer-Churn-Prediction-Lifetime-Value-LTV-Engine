@@ -1,2 +1,0 @@
-# Customer-Churn-Prediction-Lifetime-Value-LTV-Engine
-Customer Churn Prediction &amp; Lifetime Value (LTV) Engine is a machine learning project that predicts customer churn and estimates Customer Lifetime Value (LTV). It uses data preprocessing, exploratory data analysis (EDA), feature engineering, and predictive modeling to help businesses identify at-risk customers and maximize customer retention.
