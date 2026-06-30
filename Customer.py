@@ -96,5 +96,4 @@ if "tenure" in df.columns:
 if "LTV" in df.columns:
     print("Average LTV:",round(df["LTV"].mean(), 2))
 
-print("exit")
 print("Data Cleaning is done")
