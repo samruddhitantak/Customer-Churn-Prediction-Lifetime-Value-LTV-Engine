@@ -87,13 +87,5 @@ if "LTV" in df.columns:
     sns.countplot(data=df,x="CustomerSegment")
     plt.title("Customer Segments by LTV")
     plt.show()
-# 8. KPI Summary
-print("Total Customers:", len(df))
-if "MonthlyCharges" in df.columns:
-    print("Average Monthly Charges:",round(df["MonthlyCharges"].mean(), 2))
-if "tenure" in df.columns:
-    print("Average Tenure:",round(df["tenure"].mean(), 2))
-if "LTV" in df.columns:
-    print("Average LTV:",round(df["LTV"].mean(), 2))
 
 print("Data Cleaning is done")
