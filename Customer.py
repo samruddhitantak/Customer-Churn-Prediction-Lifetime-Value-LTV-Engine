@@ -78,15 +78,6 @@ plt.figure(figsize=(10,6))
 sns.barplot(data=importance_df.head(10),x="Importance",y="Feature")
 plt.title("Top 10 Important Features")
 plt.show()
-# 7. Customer LTV Segmentation
-if "LTV" in df.columns:
-    df["CustomerSegment"] = pd.cut(df["LTV"],bins=[0, 1000, 5000, np.inf],labels=["Low Value","Medium Value","High Value"])
-    print("\nCustomer Segments:")
-    print(df["CustomerSegment"].value_counts())
-    plt.figure(figsize=(6,4))
-    sns.countplot(data=df,x="CustomerSegment")
-    plt.title("Customer Segments by LTV")
-    plt.show()
 # 8. KPI Summary
 print("Total Customers:", len(df))
 if "MonthlyCharges" in df.columns:
