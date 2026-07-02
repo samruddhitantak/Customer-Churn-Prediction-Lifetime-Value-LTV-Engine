@@ -88,3 +88,4 @@ if "LTV" in df.columns:
     print("Average LTV:",round(df["LTV"].mean(), 2))
 
 print("Data Cleaning is done")
+print("Exit")
