@@ -86,6 +86,14 @@ if "tenure" in df.columns:
     print("Average Tenure:",round(df["tenure"].mean(), 2))
 if "LTV" in df.columns:
     print("Average LTV:",round(df["LTV"].mean(), 2))
-
+# 7. Customer LTV Segmentation
+if "LTV" in df.columns:
+    df["CustomerSegment"] = pd.cut(df["LTV"],bins=[0, 1000, 5000, np.inf],labels=["Low Value","Medium Value","High Value"])
+    print("\nCustomer Segments:")
+    print(df["CustomerSegment"].value_counts())
+    plt.figure(figsize=(6,4))
+    sns.countplot(data=df,x="CustomerSegment")
+    plt.title("Customer Segments by LTV")
+    plt.show()Cus
 print("Data Cleaning is done")
 print("Exit")
