@@ -96,4 +96,3 @@ if "LTV" in df.columns:
     plt.title("Customer Segments by LTV")
     plt.show()Cus
 print("Data Cleaning is done")
-print("Exit")
