@@ -94,5 +94,5 @@ if "LTV" in df.columns:
     plt.figure(figsize=(6,4))
     sns.countplot(data=df,x="CustomerSegment")
     plt.title("Customer Segments by LTV")
-    plt.show()Cus
-print("Data Cleaning is done")
+    plt.show()
+
