@@ -95,4 +95,4 @@ if "LTV" in df.columns:
     sns.countplot(data=df,x="CustomerSegment")
     plt.title("Customer Segments by LTV")
     plt.show()
-
+print("Exit")
